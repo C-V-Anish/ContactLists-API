@@ -9,6 +9,9 @@ djangorestframework = "*"
 pyjwt = "*"
 drf-yasg = "*"
 python-dotenv = "*"
+gunicorn = "*"
+psycopg = "*"
+django-heroku = "*"
 
 [dev-packages]
 
