@@ -11,6 +11,7 @@ drf-yasg = "*"
 python-dotenv = "*"
 gunicorn = "*"
 psycopg2-binary = "*"
+whitenoise = "*"
 
 [dev-packages]
 
