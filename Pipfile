@@ -10,7 +10,8 @@ pyjwt = "*"
 drf-yasg = "*"
 python-dotenv = "*"
 gunicorn = "*"
-psycopg = "*"
+dj-database-url = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 

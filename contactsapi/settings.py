@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-4c$v7x=*ibf@u)yxpxbu5cyu4vdq8qk6+$d2enq5j+d&$aq1at
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['web-production-dafa.up.railway.app', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-dafa.up.railway.app']
 
 
 # Application definition
@@ -147,3 +148,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
