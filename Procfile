@@ -1,1 +1,1 @@
-web: gunicorn contactsapi.wsgi --log-file -
+web: python manage.py migrate && python manage.py collectstatic && gunicorn contactsapi.wsgi
