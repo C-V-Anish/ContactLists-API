@@ -140,7 +140,7 @@ USE_TZ = True
 
 #CORS
 CORS_ALLOWED_ORIGINS = [
-    "https://localhost:8080",
+    "https://127.0.0.1:8080",
 ]
 
 load_dotenv('.env')
