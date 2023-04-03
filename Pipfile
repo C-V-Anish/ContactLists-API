@@ -12,6 +12,7 @@ python-dotenv = "*"
 gunicorn = "*"
 psycopg2-binary = "*"
 whitenoise = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
